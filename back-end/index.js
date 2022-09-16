@@ -31,6 +31,18 @@ app.get('/nomes', (req, res) => {
     })
 });
 
+app.post('/soma', (req, res) => {
+    const { n1 } = req.body;
+    const { n2 } = req.body;
+    result = n1 + n2
+    res.send(result);
+});
+
+app.post('/show', (req, res) => {
+    const{ texto } = req.body;
+    res.send(texto);
+})
+
 app.listen(4001, () => {
     console.log('rodando servidor');
 });

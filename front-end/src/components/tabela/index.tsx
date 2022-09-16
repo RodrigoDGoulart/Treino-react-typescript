@@ -25,6 +25,8 @@ class Tabela extends Component<{}, state>{
         this.buscarNomes()
     }
 
+    
+
     render() {
         let lista = this.state.nomes.map(nome => 
                 <tbody>
